@@ -1,0 +1,49 @@
+
+*:hover > span.info {
+    visibility:visible;
+}
+span.info {
+    font-weight: bold;
+    vertical-align: text-bottom;
+    border: 1.5px black solid;
+    border-radius: 5em;
+    font-size:smaller;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    right: 0em;
+    top:0;
+    z-index: 1;
+    visibility: hidden;
+    padding: 0 0.25em;
+    margin: auto 0.125em;
+    position: relative;
+}
+span.info::after {
+    transition: 0s;
+    content: attr(content);
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    transform: translateX(-5000px);
+    opacity: 0;
+    max-width: 15em;
+    border: grey 1px solid;
+    padding: 0.25em;
+    background-color: white;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    white-space: pre-wrap;
+    box-shadow: 0 0 9px #000000BD;
+    /*
+    box-shadow: 0 0 7px #00000080;
+    */
+}
+span.info:hover::after {
+    transform:none;
+
+
+    opacity: 1;
+    transition-delay: 0.25s;
+}

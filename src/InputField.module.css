@@ -1,0 +1,35 @@
+
+label.textInput {
+    display: block;
+    width: max-content;
+    margin-left: 1em;
+}
+label.textInput > div {
+    display: inline-block;
+    margin-left: 1em;
+}
+label.textInput > div > div {
+    color: black;
+    border-radius: 1px;
+    min-width: 4em;
+    width: 6em;
+    padding: 0.125em;
+    background-color: white;
+    cursor: text;
+    display: inline-grid;
+    position: relative;
+}
+label.textInput > div > div[valid="false"] {
+    background-color: pink;
+}
+label.textInput > div > div[valid="false"]::after {
+    content: "NaN";
+    color: darkred;
+    right: 0.25em;
+    position: absolute;
+}
+
+label.textInput > div[disabled] > div{
+    background-color: lightgrey;
+    cursor: not-allowed;
+}

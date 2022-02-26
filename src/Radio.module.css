@@ -1,0 +1,15 @@
+.wrapper {
+    
+}
+.wrapper > *{
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+.wrapper[disabled] {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+.wrapper[disabled] * {
+    cursor: not-allowed;
+}
