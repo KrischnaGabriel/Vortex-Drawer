@@ -1,2 +1,2 @@
 # Vortex-Drawer
-Stupid little Web App to draw Vortexes
+Stupid little React Web-App to draw Vortexes
